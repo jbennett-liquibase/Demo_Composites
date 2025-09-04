@@ -1,0 +1,17 @@
+name: "Setup Liquibase"
+description: "Install Liquibase with default version and edition"
+inputs:
+  version:
+    description: "Liquibase version to install"
+    default: "4.33.0"
+  edition:
+    description: "Liquibase edition"
+    default: "pro"
+runs:
+  using: "composite"
+  steps:
+    - name: Initializing Liquibase
+      uses: liquibase/setup-liquibase@v1
+      with:
+        edition: ${{ inputs.edition }}
+        version: ${{ inputs.version }}
