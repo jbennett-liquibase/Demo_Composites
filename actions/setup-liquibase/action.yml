@@ -11,7 +11,7 @@ runs:
   using: "composite"
   steps:
     - name: Initializing Liquibase
-      uses: liquibase/setup-liquibase@v1
+      uses: liquibase/setup-liquibase@v2.01
       with:
         edition: ${{ inputs.edition }}
         version: ${{ inputs.version }}
