@@ -2,9 +2,9 @@
   <img src="img/liquibase.png" alt="Liquibase Logo" title="Liquibase Logo" width="324" height="72">
 </p>
 
-# Liquibase Pro Composite Actions
+# Liquibase Secure Composite Actions
 
-This repository contains composite actions to use in Liquibase Pro demonstrations. If a version or edition needs to be updated, it can be done from a central location.
+This repository contains composite actions to use in Liquibase Secure (formerly Pro) demonstrations. If a version or edition needs to be updated, it can be done from a central location.
 
 # ✔️ To Use Composites
 Add these composite actions to your GitHub configuration files.
