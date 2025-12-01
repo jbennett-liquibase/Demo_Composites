@@ -3,7 +3,7 @@ description: "Install Liquibase with default version and edition"
 inputs:
   version:
     description: "Liquibase version to install"
-    default: "5.0.1"
+    default: "5.0.3"
   edition:
     description: "Liquibase edition"
     default: "secure"
