@@ -1,0 +1,17 @@
+name: "Update Artifacts"
+description: "Upload Liquibase JSON and HTML artifacts"
+inputs:
+  environment:
+    description: "Environment name for artifact label"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Updating artifacts
+      if: success() || failure()
+      uses: actions/upload-artifact@v6
+      with:
+        name: Artifacts-${{ inputs.environment }}
+        path: |
+          **/*.json
+          **/*.html
