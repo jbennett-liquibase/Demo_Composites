@@ -1,0 +1,12 @@
+name: "Checkout Repository"
+description: "Checkout repository with Liquibase demo token"
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v5
+      with:
+        token: ${{ inputs.token }}
+inputs:
+  token:
+    description: "GitHub token"
+    required: true
