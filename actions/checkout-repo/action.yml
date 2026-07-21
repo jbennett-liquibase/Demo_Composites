@@ -3,7 +3,7 @@ description: "Checkout repository with Liquibase demo token"
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v7
       with:
         token: ${{ inputs.token }}
 inputs:
